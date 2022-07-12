@@ -35,16 +35,17 @@ const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>test description</p>
+                        <p></p>
                         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                             <Row>
-                                <Col sm={3}>
+                                <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
                                     <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                        <Nav.Link eventKey="first" className="nav-item">Work</Nav.Link>
                                     </Nav.Item>
+                                    <br/>
                                     <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                        <Nav.Link eventKey="second" className="nav-item">Personal</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                                 </Col>

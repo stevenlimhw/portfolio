@@ -1,6 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { FaBeer, FaJava, FaJs, FaNode, FaNodeJs, FaPython } from 'react-icons/fa';
+import { DiCss3, DiHtml5, DiReact, DiRuby } from 'react-icons/di';
+import { TbBrandKotlin } from 'react-icons/tb';
+import { SiExpress, SiRedux, SiTypescript } from 'react-icons/si';
+
 
 const responsive = {
     superLargeDesktop: {
@@ -10,7 +15,7 @@ const responsive = {
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3
+        items: 4
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -31,15 +36,91 @@ const Skills = () => {
                     <Col>
                         <div>
                             <h2>Skills</h2>
-                            <p>testing description</p>
-                            <Carousel responsive={responsive} infinite={true} autoPlay={true}>
-                                <div>Item 1</div>
-                                <div>Item 2</div>
-                                <div>Item 3</div>
-                                <div>Item 4</div>
+                            <p>Frequently Used</p>
+                            <Carousel responsive={responsive} infinite={true} autoPlay={true} containerClass="skills-carousel">
+                                <div className="skills-skill">
+                                    <FaJava size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <FaJs size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <SiTypescript size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <DiReact size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <SiRedux size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <FaNodeJs size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <SiExpress size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <DiHtml5 size={100} />
+                                </div>
+                                <div className="skills-skill">
+                                    <DiCss3 size={100} />
+                                </div>
                             </Carousel>
                         </div>
                     </Col>
+                </Row>
+                <Row>
+                    <p>Languages and Frameworks</p>
+                    <caption>Complete list of all languages and frameworks I have learned and used before.</caption>
+                    <div className="skills-list-container">
+                        <div className="skills-list-panel">
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Typescript</li>
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>Ruby</li>
+                                <li>Golang (Go)</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                        <div className="skills-list-panel skills-list-panel-right">
+                            <ul>
+                                <div className="skills-subcategory">Web</div>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Ruby on Rails</li>
+                                <li>Spring Boot</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <br/>
+                                <div className="skills-subcategory">Databases</div>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                        <div className="skills-list-panel skills-list-panel-right">
+                            <ul>
+                                <div className="skills-subcategory">Mobile</div>
+                                <li>Android Jetpack</li>
+                                <br/>
+                                <div className="skills-subcategory">Tools</div>
+                                <li>Postman</li>
+                                <li>JUnit</li>
+                                <li>Git and GitHub</li>
+                                <li>Vim</li>
+                                <li>IntelliJ</li>
+                                <li>Visual Studio Code</li>
+                                <li>Bootstrap</li>
+                                <li>Ant Design</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
                 </Row>
             </Container>
         </section>

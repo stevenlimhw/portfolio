@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDown, Briefcase } from "react-bootstrap-icons";
+import cat from '../assets/images/cat.png';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const texts = ["Web Developer", "Frontend Developer", "Backend Developer"];
+    const texts = ["Software Engineer", "Frontend Web Developer", "Backend Web Developer"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000; // in milliseconds
@@ -46,22 +47,29 @@ const Banner = () => {
         }
     }, [text]);
 
-
     return (
-        <div className="banner" id="home">
+        <div id="home" className="banner">
             <Container>
-                <Row className="">
+                <Row>
                     <Col xs={12} md={6} xl={7}>
-                        <div>Welcome to my Portfolio</div>
-                        <h1>
-                            Hello, I am a 
-                            <span> {text}</span>
-                        </h1>
-                        <p>testing description</p>
-                        <Button onClick={() => console.log("connect")}>Let's connect <ArrowRightCircle size={25} /></Button>
+                        <h1>Hello there, I'm Steven.</h1>
+                        <h2>
+                            <div className="text-input-area">
+                                <div className="text-input-label">And I am a </div>
+                                <div className="text-input-text">
+                                    <Briefcase className="icon" />
+                                    <span>{text}<span className="text-cursor" /></span>
+                                </div>
+                            </div>
+                        </h2>
+                        <p>
+                            I am an undergraduate student at the National University of 
+                            Singapore (NUS) studying Computer Science.
+                        </p>
+                        <Button className="button">About Me <ArrowDown /></Button>
                     </Col>
                     <Col xs={12} md={6} xl ={5}>
-                        <img alt="Header Image" />
+                        <img src={cat} alt="Header Image" />
                     </Col>
                 </Row>
             </Container>
