@@ -31,9 +31,9 @@ const responsive = {
 const Skills = () => {
     return (
         <section className="skills" id="skills">
-            <Container>
-                <Row>
-                    <Col>
+            <Container className="reset_padding_margin">
+                <Row className="reset_padding_margin">
+                    <Col className="reset_padding_margin">
                         <div>
                             <h2>Skills</h2>
                             <p>Frequently Used</p>
@@ -73,8 +73,9 @@ const Skills = () => {
                     <p>Languages and Frameworks</p>
                     <caption>Complete list of all languages and frameworks I have learned and used before.</caption>
                     <div className="skills-list-container">
-                        <div className="skills-list-panel">
+                        <div className="skills-list-panel skills-list-panel-right">
                             <ul>
+                                <div className="skills-subcategory">Languages</div>
                                 <li>Javascript</li>
                                 <li>Typescript</li>
                                 <li>Java</li>
@@ -87,31 +88,26 @@ const Skills = () => {
                         </div>
                         <div className="skills-list-panel skills-list-panel-right">
                             <ul>
-                                <div className="skills-subcategory">Web</div>
+                                <div className="skills-subcategory">Frameworks</div>
                                 <li>React</li>
                                 <li>Redux</li>
                                 <li>Express</li>
                                 <li>Node</li>
                                 <li>Ruby on Rails</li>
                                 <li>Spring Boot</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <br/>
-                                <div className="skills-subcategory">Databases</div>
-                                <li>MongoDB</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>MongoDB Atlas</li>
                                 <li>PostgreSQL</li>
-                                <li>SQLite</li>
                             </ul>
                         </div>
                         <div className="skills-list-panel skills-list-panel-right">
                             <ul>
-                                <div className="skills-subcategory">Mobile</div>
-                                <li>Android Jetpack</li>
-                                <br/>
                                 <div className="skills-subcategory">Tools</div>
                                 <li>Postman</li>
                                 <li>JUnit</li>
                                 <li>Git and GitHub</li>
+                                <li>Android Jetpack</li>
                                 <li>Vim</li>
                                 <li>IntelliJ</li>
                                 <li>Visual Studio Code</li>

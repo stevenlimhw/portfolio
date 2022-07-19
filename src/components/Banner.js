@@ -49,10 +49,10 @@ const Banner = () => {
 
     return (
         <div id="home" className="banner">
-            <Container>
-                <Row>
-                    <Col xs={12} md={6} xl={7}>
-                        <h1>Hello there, I'm Steven.</h1>
+            <Container className="reset_padding_margin">
+                <Row className="reset_padding_margin">
+                    <Col xs={12} md={6} xl={7} className="reset_padding_margin">
+                        <h1>Hello there, I'm <span className="name-span">Steven.</span></h1>
                         <h2>
                             <div className="text-input-area">
                                 <div className="text-input-label">And I am a </div>

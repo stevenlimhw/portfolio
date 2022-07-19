@@ -1,13 +1,18 @@
-import { Col } from "react-bootstrap";
+import sea from "../../src/assets/images/sea.jpg";
 
 const Project = ({ title, description, imgUrl }) => {
     return (
-        <Col sm={6} md={4}>
-            <div>
-                <h4>{title}</h4>
-                <span>{description}</span>
+        <div className="project">
+            <div className="project-top">
+                {title}
             </div>
-        </Col>
+            <div className="project-mid">
+                <img className="project-img" src={sea} alt="img"/>
+            </div>
+            <div className="project-bot">
+                {description}
+            </div>
+        </div>
     )
 }
 

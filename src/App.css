@@ -10,9 +10,11 @@
 
 .skills,
 .projects {
-    background-image: linear-gradient(270deg, rgba(157,14,82,1) 18%, rgba(0,40,99,1) 100%);
-    height: 150vh;
-    padding: 8rem;
+    /* background-image: linear-gradient(270deg, rgba(157,14,82,1) 18%, rgba(0,40,99,1) 100%); */
+    background-color: #0C090A;
+    height: fit-content;
+    padding: 5rem 0;
+    padding-left: 100px !important;
 }
 
 /* Reset */
@@ -27,11 +29,18 @@
 
 .banner {
     width: 100%;
-    padding-left: 10%;
+    padding-left: 100px;
     padding-top: 10rem;
     height: 100vh !important;
-    background-image: url(./assets/images/future-bg.jpg);
+    /* background-image: url(./assets/images/future-bg.jpg); */
+    /* background-color: #36454F; */
+    background-color: #0C090A;
     background-size: cover;
+}
+
+.reset_padding_margin {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .banner h1 {
@@ -101,6 +110,20 @@
     gap: 1rem;
 }
 
+.name-span {
+    display: inline-block;
+    background-color: #00308F;
+    padding: 0 2rem;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    animation: 4s name-span-rotation infinite alternate;
+}
+
+@keyframes name-span-rotation {
+    from { transform: rotate(5deg) }
+    to { transform: rotate(0deg) }
+}
+
 /* Navbar (Navigation) */
 
 h4 {
@@ -112,7 +135,7 @@ h4 {
 
 .navbar-navbar {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -125,16 +148,20 @@ h4 {
 .navbar-links {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .nav-button {
     font-size: 1.2rem !important;
     font-weight: 600 !important;
-    padding: 1rem 2rem !important;
-    color: white;
+    padding: 0.5rem 0 !important;
+    color: #B6B6B4;
     background: none;
-    border: 1.5px white solid;
+    /* border: 1px red solid; */
+}
+
+.nav-button:hover {
+    color: white;
 }
 
 /* Skills */
@@ -154,12 +181,13 @@ h4 {
 }
 
 .skills-carousel {
-    background-color: black;
+    /* background-color: black; */
     height: 15rem;
     border-radius: 20px;
     width: 100%;
     padding: 0 8%;
     margin-bottom: 2rem !important;
+    border: 4px solid #00308F;
 }
 
 .skills-skill {
@@ -180,27 +208,37 @@ caption {
 }
 
 .skills-list-panel {
-    background-color: black;
+    background-color: #0C090A;
     color: #DCDCDC;
     font-size: 2rem;
     font-weight: 700;
     border-radius: 10px;
     width: 50%;
     height: fit-content;
-    padding: 2rem;
+    padding: 1rem;
+    border: 2px solid #D21F3C;
+    height: 350px;
 }
 
 .skills-list-panel-right li {
     font-size: 1rem;
+    color: #B6B6B4;
 }
 
 .skills-subcategory {
     font-size: 1.5rem;
     font-weight: 800;
     transform: translateX(-1rem);
+    margin-bottom: 1rem !important;
 }
 
 /* Projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #0C090A;
+}
 
 .projects h2 {
     color: #DCDCDC;
@@ -209,25 +247,45 @@ caption {
     margin-bottom: 2rem !important;
 }
 
-.projects p {
-    color: #DCDCDC;
-    font-size: 2rem;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(2, 350px);
+    column-gap: 4%;
+    row-gap: 100px;
+}
+
+/* Project */
+
+.project {
+    border: 1px white solid;
+    border-radius: 10px !important;
+    background-color: white;
+}
+
+.project-top {
+    height: 20%;
+    padding: 6.5% 5%;
+    color: white;
     font-weight: 600;
-    margin-bottom: 1rem !important;
+    font-size: 20px;
 }
 
-.nav-item {
-    background: none !important;
-    color: #DCDCDC !important;
-    border: 1px #DCDCDC solid;
-    font-size: 1.5rem;
-    font-weight: 700;
+.project-mid {
+    height: 50%;
+    padding: 5%;
+}
+
+.project-bot {
+    height: 30%;
+    padding: 5%;
+    color: white;
+    font-weight: 400;
+}
+
+.project-img {
+    height: 100%;
     border-radius: 10px;
-    margin-top: 1rem;
-}
-
-.nav-item-active,
-.nav-item:hover {
-    background-color: #DCDCDC !important;
-    color: black !important;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }

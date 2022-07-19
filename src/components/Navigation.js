@@ -3,12 +3,15 @@ import { Button } from "react-bootstrap";
 const Navigation = () => {
     return (
       <div className='navbar-navbar'>
-        <h4>PORTFOLIO</h4>
+        {/* <h4 className="nav-button">PORTFOLIO</h4> */}
         <div className="navbar-links">
-          <div className="button">
+          <div className="nav-button">
+            Home
+          </div>
+          <div className="nav-button">
             Skills
           </div>
-          <div className="button">
+          <div className="nav-button">
             Projects
           </div>
         </div>
