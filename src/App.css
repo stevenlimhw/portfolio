@@ -9,12 +9,17 @@
 }
 
 .skills,
-.projects {
+.projects,
+.footer {
     /* background-image: linear-gradient(270deg, rgba(157,14,82,1) 18%, rgba(0,40,99,1) 100%); */
     background-color: #0C090A;
     height: fit-content;
-    padding: 5rem 0;
-    padding-left: 100px !important;
+    padding: 5rem 100px !important;
+    /* padding-left: 100px !important; */
+}
+
+.skills {
+    /* background: linear-gradient(10deg, #0C090A 50%, #3C4748 50%); */
 }
 
 /* Reset */
@@ -112,17 +117,21 @@
 
 .name-span {
     display: inline-block;
-    background-color: #00308F;
+    /* background-color: #00308F; */
+    /* background-color: #3C4748; */
+    color: #0C090A;
+    background-color: white;
+
     padding: 0 2rem;
     border-radius: 10px;
-    transform: rotate(5deg);
-    animation: 4s name-span-rotation infinite alternate;
+    /* transform: rotate(5deg); */
+    /* animation: 4s name-span-rotation infinite alternate; */
 }
 
-@keyframes name-span-rotation {
+/* @keyframes name-span-rotation {
     from { transform: rotate(5deg) }
     to { transform: rotate(0deg) }
-}
+} */
 
 /* Navbar (Navigation) */
 
@@ -140,15 +149,24 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    background-color: #0C090A;
     position: fixed;
     z-index: 9999;
+    border-bottom: 2px white solid;
 }
 
 .navbar-links {
     display: flex;
     flex-direction: row;
     gap: 4rem;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .nav-button {
@@ -182,12 +200,13 @@ h4 {
 
 .skills-carousel {
     /* background-color: black; */
+    /* background-color: #3C4748; */
     height: 15rem;
     border-radius: 20px;
     width: 100%;
     padding: 0 8%;
     margin-bottom: 2rem !important;
-    border: 4px solid #00308F;
+    border: 4px solid white;
 }
 
 .skills-skill {
@@ -208,16 +227,18 @@ caption {
 }
 
 .skills-list-panel {
-    background-color: #0C090A;
+    /* background-color: #0C090A; */
     color: #DCDCDC;
     font-size: 2rem;
     font-weight: 700;
     border-radius: 10px;
     width: 50%;
-    height: fit-content;
+    height: fit-content !important;
     padding: 1rem;
-    border: 2px solid #D21F3C;
+    /* border: 2px solid #D21F3C; */
+    /* background-color: #3C4748; */
     height: 350px;
+    border: 4px solid white;
 }
 
 .skills-list-panel-right li {
@@ -229,7 +250,7 @@ caption {
     font-size: 1.5rem;
     font-weight: 800;
     transform: translateX(-1rem);
-    margin-bottom: 1rem !important;
+    margin-bottom: 0 !important;
 }
 
 /* Projects */
@@ -260,7 +281,8 @@ caption {
 .project {
     border: 1px white solid;
     border-radius: 10px !important;
-    background-color: white;
+    /* background-color: white; */
+    background: linear-gradient(black 50%, white 50%);
 }
 
 .project-top {
@@ -273,14 +295,15 @@ caption {
 
 .project-mid {
     height: 50%;
-    padding: 5%;
+    width: 100%;
+    padding: auto;
 }
 
 .project-bot {
     height: 30%;
     padding: 5%;
-    color: white;
-    font-weight: 400;
+    color: #0C090A;
+    font-weight: 600;
 }
 
 .project-img {
@@ -288,4 +311,40 @@ caption {
     border-radius: 10px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 90%;
+    margin: 0 5% !important;
+}
+
+/* Footer.js */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    height: fit-content;
+    /* background-color: #3C4748; */
+    /* background: linear-gradient(178deg, #0C090A 60%, white 50%); */
+    /* background: linear-gradient(170deg, #3C4748 50%, #0C090A 30%); */
+    /* background: linear-gradient(176deg, #0C090A 30%, white 30%); */
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    padding: 30px 60px !important;
+    border-radius: 20px;
+}
+
+.footer-heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem !important;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
 }

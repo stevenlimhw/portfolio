@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Footer from './Footer';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Banner />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   )
 }
