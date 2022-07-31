@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { FaBeer, FaJava, FaJs, FaNode, FaNodeJs, FaPython } from 'react-icons/fa';
-import { DiCss3, DiHtml5, DiReact, DiRuby } from 'react-icons/di';
-import { TbBrandKotlin, TbLanguage, TbTools } from 'react-icons/tb';
+// import { FaBeer, FaJava, FaJs, FaNode, FaNodeJs, FaPython } from 'react-icons/fa';
+// import { DiCss3, DiHtml5, DiReact, DiRuby } from 'react-icons/di';
+import { TbLanguage, TbTools } from 'react-icons/tb';
 import { SiExpress, SiReact, SiRedux, SiTypescript } from 'react-icons/si';
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 
 const responsive = {
@@ -37,7 +37,7 @@ const Skills = () => {
                     <Col className="reset_padding_margin">
                         <div>
                             <h2>Skills</h2>
-                            <p>Frequently Used</p>
+                            {/* <p>Frequently Used</p>
                             <Slide triggerOnce>
                                 <Carousel responsive={responsive} infinite={true} autoPlay={true} containerClass="skills-carousel">
                                     <div className="skills-skill">
@@ -68,15 +68,16 @@ const Skills = () => {
                                         <DiCss3 size={100} />
                                     </div>
                                 </Carousel>
-                            </Slide>
+                            </Slide> */}
                         </div>
                     </Col>
                 </Row>
                 <Row>
-                    <p>Languages and Frameworks</p>
+                    {/* <p>Languages and Frameworks</p> */}
                     <caption>Complete list of all languages and frameworks I have learned and used before.</caption>
-                    <Slide triggerOnce>
+                    {/* <Slide triggerOnce> */}
                     <div className="skills-list-container">
+                        <Slide triggerOnce className="slide-skill-left" delay={300}>
                             <div className="skills-list-panel skills-list-panel-right">
                                 <TbLanguage size={100}/>
                                 <ul>
@@ -88,34 +89,39 @@ const Skills = () => {
                                     <li>Golang (Go)</li>
                                 </ul>
                             </div>
-                        <div className="skills-list-panel skills-list-panel-right">
-                            <SiReact size={100} />
-                            <ul>
-                                <div className="skills-subcategory">Frameworks</div>
-                                <li>React</li>
-                                <li>Express</li>
-                                <li>Node</li>
-                                <li>Ruby on Rails</li>
-                                <li>Redux</li>
-                                <li>HTML and CSS</li>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                            </ul>
-                        </div>
-                        <div className="skills-list-panel skills-list-panel-right">
-                            <TbTools size={100} />
-                            <ul>
-                                <div className="skills-subcategory">Tools</div>
-                                <li>Postman</li>
-                                <li>Git and GitHub</li>
-                                <li>Bootstrap</li>
-                                <li>Vim</li>
-                                <li>IntelliJ</li>
-                                <li>Visual Studio Code</li>
-                            </ul>
-                        </div>
+                        </Slide>
+                        <Slide triggerOnce className="slide-skill-middle" delay={200}>
+                            <div className="skills-list-panel skills-list-panel-right">
+                                <SiReact size={100} />
+                                <ul>
+                                    <div className="skills-subcategory">Frameworks</div>
+                                    <li>React</li>
+                                    <li>Express</li>
+                                    <li>Node</li>
+                                    <li>Ruby on Rails</li>
+                                    <li>Redux</li>
+                                    <li>HTML and CSS</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </Slide>
+                        <Slide triggerOnce className="slide-skill-right" delay={100}>
+                            <div className="skills-list-panel skills-list-panel-right">
+                                <TbTools size={100} />
+                                <ul>
+                                    <div className="skills-subcategory">Tools</div>
+                                    <li>Postman</li>
+                                    <li>Git and GitHub</li>
+                                    <li>Bootstrap</li>
+                                    <li>Vim</li>
+                                    <li>IntelliJ</li>
+                                    <li>Visual Studio Code</li>
+                                </ul>
+                            </div>
+                        </Slide>
                     </div>
-                    </Slide>
+                    {/* </Slide> */}
                 </Row>
             </Container>
         </section>

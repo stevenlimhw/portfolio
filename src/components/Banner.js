@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { ArrowDown, Briefcase } from "react-bootstrap-icons";
 import Link from "react-scroll/modules/components/Link";
-import cat from '../assets/images/cat.png';
+import cat from '../assets/images/cat2.png';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -58,7 +58,7 @@ const Banner = () => {
                             <div className="text-input-area">
                                 <div className="text-input-label">And I am a </div>
                                 <div className="text-input-text">
-                                    <Briefcase className="icon" />
+                                    <Briefcase className="icon text-input-text-briefcase" />
                                     <span>{text}<span className="text-cursor" /></span>
                                 </div>
                             </div>
