@@ -5,6 +5,7 @@ import { FaBeer, FaJava, FaJs, FaNode, FaNodeJs, FaPython } from 'react-icons/fa
 import { DiCss3, DiHtml5, DiReact, DiRuby } from 'react-icons/di';
 import { TbBrandKotlin, TbLanguage, TbTools } from 'react-icons/tb';
 import { SiExpress, SiReact, SiRedux, SiTypescript } from 'react-icons/si';
+import { Fade, Slide } from "react-awesome-reveal";
 
 
 const responsive = {
@@ -37,53 +38,56 @@ const Skills = () => {
                         <div>
                             <h2>Skills</h2>
                             <p>Frequently Used</p>
-                            <Carousel responsive={responsive} infinite={true} autoPlay={true} containerClass="skills-carousel">
-                                <div className="skills-skill">
-                                    <FaJava size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <FaJs size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <SiTypescript size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <DiReact size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <SiRedux size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <FaNodeJs size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <SiExpress size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <DiHtml5 size={100} />
-                                </div>
-                                <div className="skills-skill">
-                                    <DiCss3 size={100} />
-                                </div>
-                            </Carousel>
+                            <Slide triggerOnce>
+                                <Carousel responsive={responsive} infinite={true} autoPlay={true} containerClass="skills-carousel">
+                                    <div className="skills-skill">
+                                        <FaJava size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <FaJs size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <SiTypescript size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <DiReact size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <SiRedux size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <FaNodeJs size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <SiExpress size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <DiHtml5 size={100} />
+                                    </div>
+                                    <div className="skills-skill">
+                                        <DiCss3 size={100} />
+                                    </div>
+                                </Carousel>
+                            </Slide>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <p>Languages and Frameworks</p>
                     <caption>Complete list of all languages and frameworks I have learned and used before.</caption>
+                    <Slide triggerOnce>
                     <div className="skills-list-container">
-                        <div className="skills-list-panel skills-list-panel-right">
-                            <TbLanguage size={100}/>
-                            <ul>
-                                <div className="skills-subcategory">Languages</div>
-                                <li>Javascript</li>
-                                <li>Typescript</li>
-                                <li>Java</li>
-                                <li>Ruby</li>
-                                <li>Golang (Go)</li>
-                            </ul>
-                        </div>
+                            <div className="skills-list-panel skills-list-panel-right">
+                                <TbLanguage size={100}/>
+                                <ul>
+                                    <div className="skills-subcategory">Languages</div>
+                                    <li>Javascript</li>
+                                    <li>Typescript</li>
+                                    <li>Java</li>
+                                    <li>Ruby</li>
+                                    <li>Golang (Go)</li>
+                                </ul>
+                            </div>
                         <div className="skills-list-panel skills-list-panel-right">
                             <SiReact size={100} />
                             <ul>
@@ -110,8 +114,8 @@ const Skills = () => {
                                 <li>Visual Studio Code</li>
                             </ul>
                         </div>
-                        
                     </div>
+                    </Slide>
                 </Row>
             </Container>
         </section>
