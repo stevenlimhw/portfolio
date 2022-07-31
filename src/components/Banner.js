@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { ArrowDown, Briefcase } from "react-bootstrap-icons";
+import Link from "react-scroll/modules/components/Link";
 import cat from '../assets/images/cat.png';
 
 const Banner = () => {
@@ -66,7 +67,9 @@ const Banner = () => {
                             I am an undergraduate student at the National University of 
                             Singapore (NUS) studying Computer Science.
                         </p>
-                        <Button className="button">About Me <ArrowDown /></Button>
+                        <Link activeClass="nav-button-active" to="skills" spy={true} smooth={true} offset={-10} duration={200}>
+                            <Button className="button">About Me <ArrowDown /></Button>
+                        </Link>
                     </Col>
                     <Col xs={12} md={6} xl ={5}>
                         <img src={cat} alt="Header Image" />
