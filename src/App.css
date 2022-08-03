@@ -291,13 +291,23 @@ caption {
     border-radius: 10px !important;
     /* background-color: white; */
     background: linear-gradient(black 50%, white 50%);
+    height: fit-content;
+}
+
+.project-type {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
 .project-top {
     height: 20%;
     padding: 6.5% 5%;
     color: white;
-    font-weight: 600;
+    font-weight: 750;
     font-size: 20px;
 }
 
@@ -311,7 +321,8 @@ caption {
     height: 30%;
     padding: 5%;
     color: #0C090A;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .project-img {
@@ -358,6 +369,25 @@ caption {
 }
 
 @media (max-width: 1100px) {
+    .navbar-navbar {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
     .banner img {
         display: none;
     }
@@ -411,10 +441,8 @@ caption {
         padding: 0.8rem 1rem;
     }
     .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, 20%);
-        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
     .skills,
     .projects,
@@ -466,10 +494,8 @@ caption {
         background-size: cover;
     }
     .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, 350px);
-        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
     .banner img {
         display: none;
@@ -483,6 +509,10 @@ caption {
         background-color: #0C090A;
         height: fit-content;
         padding: 5rem 20px !important;
+    }
+    .project-img {
+        height: 150px;
+        width: auto;
     }
 }
 
