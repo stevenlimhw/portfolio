@@ -279,7 +279,7 @@ caption {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(2, 450px);
+    grid-template-rows: repeat(2, fit-content);
     column-gap: 4%;
     row-gap: 100px;
 }
@@ -290,7 +290,7 @@ caption {
     border: 1px white solid;
     border-radius: 10px !important;
     /* background-color: white; */
-    background: linear-gradient(black 50%, white 50%);
+    background: linear-gradient(black 40%, white 40%);
     height: fit-content;
 }
 
@@ -303,12 +303,23 @@ caption {
     border-radius: 10px;
 }
 
+.project-top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6.5% 5%;
+}
+
 .project-top {
     height: 20%;
-    padding: 6.5% 5%;
     color: white;
     font-weight: 750;
+}
+
+.project-title {
     font-size: 20px;
+    line-height: 20px;
+    width: 95%;
 }
 
 .project-mid {
@@ -357,6 +368,13 @@ caption {
 .footer-heading {
     font-size: 30px;
     font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.footer-description {
+    font-size: 18px;
+    font-weight: 450;
     color: white;
     margin-bottom: 1rem !important;
 }

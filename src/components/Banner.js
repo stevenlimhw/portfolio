@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Fade, JackInTheBox, Slide, Zoom } from "react-awesome-reveal";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { ArrowDown, Briefcase } from "react-bootstrap-icons";
 import Link from "react-scroll/modules/components/Link";
@@ -53,26 +54,32 @@ const Banner = () => {
             <Container className="reset_padding_margin">
                 <Row className="reset_padding_margin">
                     <Col xs={12} md={6} xl={7} className="reset_padding_margin">
-                        <h1>Hello there, I'm <span className="name-span">Steven.</span></h1>
-                        <h2>
-                            <div className="text-input-area">
-                                <div className="text-input-label">And I am a </div>
-                                <div className="text-input-text">
-                                    <Briefcase className="icon text-input-text-briefcase" />
-                                    <span>{text}<span className="text-cursor" /></span>
+                        <JackInTheBox>
+                            <h1>Hello there, I'm <span className="name-span">Steven.</span></h1>
+                        </JackInTheBox>
+                        <Zoom cascade triggerOnce>
+                            <h2>
+                                <div className="text-input-area">
+                                    <div className="text-input-label">And I am a </div>
+                                    <div className="text-input-text">
+                                        <Briefcase className="icon text-input-text-briefcase" />
+                                        <span>{text}<span className="text-cursor" /></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </h2>
-                        <p>
-                            I am an undergraduate student at the National University of 
-                            Singapore (NUS) studying Computer Science.
-                        </p>
-                        <Link activeClass="nav-button-active" to="skills" spy={true} smooth={true} offset={-10} duration={200}>
-                            <Button className="button">About Me <ArrowDown /></Button>
-                        </Link>
+                            </h2>
+                            <p>
+                                I am an undergraduate student at the National University of 
+                                Singapore (NUS) studying Computer Science.
+                            </p>
+                            <Link activeClass="nav-button-active" to="skills" spy={true} smooth={true} offset={-10} duration={200}>
+                                <Button className="button">Check it out <ArrowDown /></Button>
+                            </Link>
+                        </Zoom>
                     </Col>
                     <Col xs={12} md={6} xl ={5}>
-                        <img src={cat} alt="Header Image" />
+                        <Zoom triggerOnce>
+                            <img src={cat} alt="Header Image" />
+                        </Zoom>
                     </Col>
                 </Row>
             </Container>

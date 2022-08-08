@@ -25,10 +25,10 @@ const Navigation = () => {
         </div>
         <div>
         <div className="nav-icons">
-            <a href="https://www.linkedin.com/in/stevenlimhw/">
+            <a href="https://www.linkedin.com/in/stevenlimhw/" target="_blank">
               <SiLinkedin color="white" size={40} />
             </a>
-            <a href="https://github.com/stevenlimhw">
+            <a href="https://github.com/stevenlimhw" target="_blank">
               <SiGithub color="white" size={40} />
             </a>
         </div>

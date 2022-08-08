@@ -87,6 +87,7 @@ const Skills = () => {
                                     <li>Java</li>
                                     <li>Ruby</li>
                                     <li>Golang (Go)</li>
+                                    <li>Python</li>
                                 </ul>
                             </div>
                         </Slide>
