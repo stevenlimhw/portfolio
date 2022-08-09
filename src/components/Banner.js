@@ -77,9 +77,9 @@ const Banner = () => {
                         </Zoom>
                     </Col>
                     <Col xs={12} md={6} xl ={5}>
-                        <Zoom triggerOnce>
+                        {/* <Zoom triggerOnce> */}
                             <img src={cat} alt="Header Image" />
-                        </Zoom>
+                        {/* </Zoom> */}
                     </Col>
                 </Row>
             </Container>

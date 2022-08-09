@@ -66,7 +66,7 @@ const Project = ({ title, type, stacks, description, contributionsFE, contributi
                         }
                         {
                             contributionsDO.length !== 0 &&
-                            <Panel header="DevOps Contributions" key="5">
+                            <Panel header="Deployment" key="5">
                                 <ul>
                                     {contributionsDO.map((contribution, id) => (
                                         <li key={id}>{contribution}</li>

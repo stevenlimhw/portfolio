@@ -259,6 +259,10 @@ caption {
     font-weight: 800;
     transform: translateX(-1rem);
     margin-bottom: 0 !important;
+    background: -webkit-linear-gradient(#eee, #333);
+    /* background: -webkit-linear-gradient(#FF0000, #0000FF); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Projects */
